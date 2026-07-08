@@ -1,34 +1,37 @@
-# Ruirui Yang | 个人主页
+# Ruirui Yang - Academic Homepage
 
-杨蕊睿 (Ruirui Yang) 的学术个人主页，使用纯 HTML/CSS/JS 构建，通过 GitHub Pages 部署。
+Personal academic website for Ruirui Yang, Master of Public Health candidate at Peking University.
 
-## 页面内容
+## Design
 
-- **Hero** - 个人简介（北京大学公共卫生硕士）
-- **关于我** - 教育背景与研究方向介绍
-- **研究技能** - 编程工具、计量方法、数据采集、定性研究
-- **研究经历** - MIT、中国社科院、阿姆斯特丹大学、港中文、北京健康大数据中心
-- **发表与会议** - Lancet 论文 + 国际会议口头报告
-- **荣誉与奖项** - 北大优秀科研奖、五四青年科学奖等
-- **联系方式** - 邮箱与 GitHub
+Based on the [luost26/academic-homepage](https://github.com/luost26/academic-homepage) design aesthetic, with sections customized for academic research:
 
-## 特性
+- **About** - Research focus and background
+- **Education** - Peking University (MPH) + Capital University of Economics and Business
+- **Research Experience** - MIT Sloan, CASS, UvA, CUHK, BHI
+- **Publications & Conferences** - Lancet (Q1, IF=8.1) + iHEA/EuHEA presentations
+- **Research Skills** - Python/Stata/ArcGIS, staggered DiD, random forest, VIMP
+- **Honors & Awards** - PKU Outstanding Research, May Fourth Youth Science Award
+- **Contact** - Email, GitHub
 
-- 🎨 深色/浅色主题切换（自动记忆偏好）
-- 📱 完全响应式设计
-- ✨ 滚动动画、数字计数、渐变光效
-- 🚀 零依赖，纯 HTML/CSS/JS
+## Tech Stack
 
-## 本地预览
+- HTML / CSS / JavaScript (no build step)
+- Bootstrap 4.6 (grid + components)
+- Font Awesome 6 + Academicons
+- Lato / Fira Sans fonts
+- Deployed via GitHub Pages
 
-直接在浏览器中打开 `index.html` 即可。
+## Structure
 
-## 自定义
+```
+.
+├── index.html      # Main page
+├── style.css       # Styles
+├── script.js       # Smooth scroll + navbar
+└── README.md       # This file
+```
 
-- `index.html` - 修改文本内容、研究信息、链接
-- `style.css` - 修改颜色、布局、样式
-- `script.js` - 修改交互行为
+## Live Site
 
-## License
-
-MIT
+https://rachel-00.github.io/

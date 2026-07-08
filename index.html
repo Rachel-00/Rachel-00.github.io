@@ -1,548 +1,385 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruirui Yang | 杨蕊睿</title>
-    <meta name="description" content="Ruirui Yang - 北京大学公共卫生硕士，健康政策与管理研究方向">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ruirui Yang - Peking University</title>
+    <meta name="description" content="Ruirui Yang - Master of Public Health candidate at Peking University. Research in health policy, health inequality, and applied econometrics.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>R.Y.<span class="logo-bracket">/&gt;</span>
-            </a>
-            <div class="nav-links" id="navLinks">
-                <a href="#about" class="nav-link">关于</a>
-                <a href="#skills" class="nav-link">技能</a>
-                <a href="#research" class="nav-link">研究</a>
-                <a href="#publications" class="nav-link">发表</a>
-                <a href="#honors" class="nav-link">荣誉</a>
-                <a href="#contact" class="nav-link">联系</a>
-            </div>
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
-                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"/>
-                        <line x1="12" y1="1" x2="12" y2="3"/>
-                        <line x1="12" y1="21" x2="12" y2="23"/>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                        <line x1="1" y1="12" x2="3" y2="12"/>
-                        <line x1="21" y1="12" x2="23" y2="12"/>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                    </svg>
-                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                    </svg>
-                </button>
-                <button class="menu-toggle" id="menuToggle" aria-label="菜单">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero 区域 -->
-    <section id="hero" class="hero">
-        <div class="hero-bg">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="status-dot"></span>
-                <span>Peking University · M.P.H. Candidate</span>
-            </div>
-            <h1 class="hero-title">
-                <span class="title-line">Hello, I'm</span>
-                <span class="title-name">Ruirui Yang</span>
-            </h1>
-            <p class="hero-subtitle">
-                健康政策与管理研究方向硕士研究生，关注数字医疗改革、
-                <br>卫生服务体系与公共卫生政策。用数据驱动的方法探索健康治理。
-            </p>
-            <div class="hero-cta">
-                <a href="#research" class="btn btn-primary">
-                    查看研究经历
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"/>
-                        <polyline points="12 5 19 12 12 19"/>
-                    </svg>
-                </a>
-                <a href="#contact" class="btn btn-secondary">联系我</a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number" data-target="1">0</span>
-                    <span class="stat-label">Lancet 论文</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-target="5">0</span>
-                    <span class="stat-label">研究机构</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-target="2">0</span>
-                    <span class="stat-label">国际会议报告</span>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </section>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand font-weight-bold" href="#">Ruirui Yang</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#honors">Honors</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- 关于我 -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">关于我</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="about-lead">
-                        用数据回答健康政策问题。
-                    </p>
-                    <p>
-                        我是杨蕊睿 (Ruirui Yang)，北京大学公共卫生学院硕士研究生，
-                        师从傅宏桥教授，研究方向为健康政策与管理。
-                        本科毕业于首都经济贸易大学会计学与统计学专业（双学位，优秀毕业生）。
-                    </p>
-                    <p>
-                        我曾在 MIT Sloan、中国社科院、阿姆斯特丹大学、香港中文大学等机构
-                        担任研究助理，研究涵盖数字医疗改革、终末期肾病照护、
-                        劳动者就业条件等议题。已在 <em>The Lancet Regional Health – Western Pacific</em>
-                        发表论文，并在 ASPA 和 Women's Health Conference 做口头报告。
-                    </p>
-                    <div class="about-tags">
-                        <span class="tag">健康政策</span>
-                        <span class="tag">卫生经济学</span>
-                        <span class="tag">因果推断</span>
-                        <span class="tag">数字医疗</span>
-                    </div>
-                </div>
-                <div class="about-card">
-                    <div class="card-glow"></div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <div class="card-dots">
-                                <span></span><span></span><span></span>
+<div class="container-lg">
+    <div class="row">
+
+        <div class="col-lg-3 col-md-4">
+            <div class="sticky-top" style="top: 80px;">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body px-4 pt-4 pb-3">
+                        <div class="text-center mb-3">
+                            <div class="profile-avatar mx-auto">
+                                <i class="fas fa-user-graduate"></i>
                             </div>
-                            <span class="card-title">profile.json</span>
                         </div>
-                        <pre class="card-code"><code>{
-  <span class="code-key">"name"</span>: <span class="code-str">"Ruirui Yang"</span>,
-  <span class="code-key">"degree"</span>: <span class="code-str">"M.P.H., Health Policy"</span>,
-  <span class="code-key">"university"</span>: <span class="code-str">"Peking University"</span>,
-  <span class="code-key">"advisor"</span>: <span class="code-str">"Prof. Hongqiao Fu"</span>,
-  <span class="code-key">"research"</span>: [
-    <span class="code-str">"Digital Health Reform"</span>,
-    <span class="code-str">"Health Policy &amp; Management"</span>,
-    <span class="code-str">"Causal Inference (DiD)"</span>
-  ],
-  <span class="code-key">"publication"</span>: <span class="code-str">"Lancet RHP-WP"</span>,
-  <span class="code-key">"status"</span>: <span class="code-str">"Open to opportunities"</span>
-}</code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 技能 -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">研究技能</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"/>
-                            <polyline points="8 6 2 12 8 18"/>
-                        </svg>
-                    </div>
-                    <h3>编程与统计软件</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Stata</span>
-                        <span class="skill-tag">ArcGIS</span>
-                        <span class="skill-tag">Excel</span>
-                        <span class="skill-tag">AI-assisted Vibe Coding</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 3v18h18"/>
-                            <path d="M18 17V9"/>
-                            <path d="M13 17V5"/>
-                            <path d="M8 17v-3"/>
-                        </svg>
-                    </div>
-                    <h3>计量方法</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Staggered DiD</span>
-                        <span class="skill-tag">随机森林</span>
-                        <span class="skill-tag">VIMP 变量重要性</span>
-                        <span class="skill-tag">面板数据分析</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
-                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-                        </svg>
-                    </div>
-                    <h3>数据采集与处理</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">API 数据采集</span>
-                        <span class="skill-tag">跨源数据链接</span>
-                        <span class="skill-tag">数据清洗与验证</span>
-                        <span class="skill-tag">大规模记录处理</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>定性研究</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">深度访谈</span>
-                        <span class="skill-tag">定性编码</span>
-                        <span class="skill-tag">问卷设计</span>
-                        <span class="skill-tag">文献系统综述</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 研究经历 -->
-    <section id="research" class="section projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">研究经历</h2>
-            </div>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-gradient g-1"></div>
-                        <span class="project-emoji">🔬</span>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-meta">
-                            <span class="project-category">MIT Sloan</span>
-                            <span class="project-year">2026 – Present</span>
+                        <div class="text-center h4 font-weight-bold mb-1">Ruirui Yang</div>
+                        <div class="text-center small text-muted mb-2">
+                            Master of Public Health<br>
+                            Peking University
                         </div>
-                        <h3 class="project-name">MIT 斯隆管理学院</h3>
-                        <p class="project-desc">
-                            研究助理（导师：Prof. Jackson Lu）。使用 Python 和 API 采集公开数据集，
-                            进行跨源记录链接与数据质量验证；对 AI 生成内容进行结构化标注，
-                            辅助 AI 与创业精神方向论文的撰写。
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>API</span>
-                            <span>数据标注</span>
-                            <span>文献验证</span>
+                        <div class="text-center small text-muted mb-3">
+                            <i class="fas fa-map-marker-alt mr-1"></i> Beijing, China
                         </div>
-                        <div class="project-links">
-                            <a href="https://osf.io/preprints/psyarxiv/nqt82_v1" target="_blank" rel="noopener" class="project-link">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                    <polyline points="15 3 21 3 21 9"/>
-                                    <line x1="10" y1="14" x2="21" y2="3"/>
-                                </svg>
-                                论文链接
+                        <div class="text-center mb-2">
+                            <a class="px-1 text-dark" href="mailto:ruirui.yang@pku.edu.cn" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a class="px-1 text-dark" href="https://github.com/Rachel-00" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a class="px-1 text-dark" href="mailto:ruiruiyang.pku@gmail.com" title="Gmail">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </a>
+                            <a class="px-1 text-dark" href="#publications" title="Scholar">
+                                <i class="ai ai-google-scholar"></i>
                             </a>
                         </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-gradient g-2"></div>
-                        <span class="project-emoji">🏥</span>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-meta">
-                            <span class="project-category">CASS</span>
-                            <span class="project-year">2025 – 2026</span>
+                        <div class="text-center">
+                            <a href="mailto:ruirui.yang@pku.edu.cn" class="email-text small text-muted">ruirui.yang(at)pku.edu.cn</a>
                         </div>
-                        <h3 class="project-name">中国社科院人口与劳动经济所</h3>
-                        <p class="project-desc">
-                            研究助理（导师：Prof. Duo Xu）。研究公立医院互联网医院服务
-                            如何影响医生在第三方平台的线上执业行为。构建 2019-2024 年
-                            医院-平台面板数据，处理 42 万+ 在线问诊记录，采用交错 DiD
-                            识别策略。
-                        </p>
-                        <div class="project-tech">
-                            <span>Staggered DiD</span>
-                            <span>面板数据</span>
-                            <span>42万+记录</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-gradient g-3"></div>
-                        <span class="project-emoji">🤖</span>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-meta">
-                            <span class="project-category">UvA</span>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-name">阿姆斯特丹大学商学院</h3>
-                        <p class="project-desc">
-                            研究助理（导师：Prof. Shuai Yuan）。对 500 篇 AMJ、ASQ 等顶级管理学
-                            期刊文章进行稳健性检验编码，改进 LLM 辅助系统综述；使用随机森林
-                            和 VIMP 方法分析不同类型劳动者的就业条件相对重要性。
-                        </p>
-                        <div class="project-tech">
-                            <span>Random Forest</span>
-                            <span>VIMP</span>
-                            <span>LLM Review</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-gradient g-1"></div>
-                        <span class="project-emoji">🎓</span>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-meta">
-                            <span class="project-category">CUHK</span>
-                            <span class="project-year">2024 – 2025</span>
-                        </div>
-                        <h3 class="project-name">香港中文大学商学院</h3>
-                        <p class="project-desc">
-                            研究助理（导师：Prof. Leo Huiyao Liao &amp; Prof. Nan Guo）。
-                            设计参与者招募策略，通过社交媒体定向招募 39 名参与者；
-                            主持深度访谈并参与转录、定性编码和问卷开发。
-                        </p>
-                        <div class="project-tech">
-                            <span>深度访谈</span>
-                            <span>定性编码</span>
-                            <span>问卷设计</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-gradient g-2"></div>
-                        <span class="project-emoji">📊</span>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-meta">
-                            <span class="project-category">Beijing</span>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3 class="project-name">北京健康大数据与政策研究中心</h3>
-                        <p class="project-desc">
-                            研究助理。处理 2013-2023 年住院记录，使用 ArcGIS 绘制京津冀
-                            转诊流向图；运用 DiD 评估张家口呼吸中心对减少北京就医转诊的效果，
-                            为市政部门提供政策可视化报告。
-                        </p>
-                        <div class="project-tech">
-                            <span>DiD</span>
-                            <span>ArcGIS</span>
-                            <span>政策评估</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- 发表与会议 -->
-    <section id="publications" class="section publications">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">发表与会议</h2>
-            </div>
-            <div class="pub-list">
-                <div class="pub-item">
-                    <div class="pub-icon">📄</div>
-                    <div class="pub-content">
-                        <span class="pub-type">期刊论文 · Q1 · IF=8.1</span>
-                        <h3 class="pub-title">
-                            Care for end-stage kidney disease in China: progress, challenges, and recommendations
-                        </h3>
-                        <p class="pub-authors">
-                            Chen T., Sun X., Tsuei S., <strong>Yang R.</strong>, Yip W., Fu H., et al. (2025)
-                        </p>
-                        <p class="pub-journal">
-                            <em>The Lancet Regional Health – Western Pacific</em>, 54, 101268
-                        </p>
-                    </div>
-                </div>
-
-                <div class="pub-item">
-                    <div class="pub-icon">🎤</div>
-                    <div class="pub-content">
-                        <span class="pub-type">口头报告 · ASPA 2026 Conference</span>
-                        <h3 class="pub-title">
-                            When Digital Reform Meets Professional Autonomy: Physicians' Online Practices
-                        </h3>
-                        <p class="pub-authors">
-                            American Society for Public Administration 2026 Conference, Hollywood, CA · Mar 20-24, 2026
-                        </p>
-                    </div>
-                </div>
-
-                <div class="pub-item">
-                    <div class="pub-icon">🎤</div>
-                    <div class="pub-content">
-                        <span class="pub-type">口头报告 · Women's Health Conference 2024</span>
-                        <h3 class="pub-title">
-                            The Role of Long-Term Care Insurance in Supporting Female Caregivers Who Become Disabled Patients
-                        </h3>
-                        <p class="pub-authors">
-                            Women's Health Conference 2024, Singapore · Oct 24-26, 2024
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- 荣誉奖项 -->
-    <section id="honors" class="section honors">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">05</span>
-                <h2 class="section-title">荣誉与奖项</h2>
-            </div>
-            <div class="honors-grid">
-                <div class="honor-item">
-                    <span class="honor-year">2025</span>
-                    <div class="honor-info">
-                        <h3>北京大学优秀科研奖</h3>
-                        <p>Outstanding Research Award, Peking University</p>
-                    </div>
-                </div>
-                <div class="honor-item">
-                    <span class="honor-year">2024</span>
-                    <div class="honor-info">
-                        <h3>五四青年科学奖 三等奖</h3>
-                        <p>Third Prize, May Fourth Youth Science Award</p>
-                    </div>
-                </div>
-                <div class="honor-item">
-                    <span class="honor-year">2023</span>
-                    <div class="honor-info">
-                        <h3>北京市优秀毕业生 (Top 5%)</h3>
-                        <p>Outstanding Graduate of Beijing</p>
-                    </div>
-                </div>
-                <div class="honor-item">
-                    <span class="honor-year">2022</span>
-                    <div class="honor-info">
-                        <h3>挑战杯创业竞赛 银奖</h3>
-                        <p>Silver Award, Challenge Cup Entrepreneurship Competition</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="col-lg-9 col-md-8">
 
-    <!-- 联系方式 -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">06</span>
-                <h2 class="section-title">联系我</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3 class="contact-heading">欢迎学术交流与合作</h3>
-                    <p class="contact-text">
-                        无论你对我的研究感兴趣、有合作意向，还是想聊聊公共卫生话题，
-                        都欢迎随时联系我。我通常会在 24 小时内回复。
+            <div class="card border-0 shadow-sm bg-white mt-3">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-3"><i class="fas fa-user mr-2 text-muted"></i>About Me</h5>
+                    <p class="text-justify mb-0">
+                        I am a Master of Public Health (MPH) candidate at <strong>Peking University</strong>, with a bachelor's degree from the <strong>Capital University of Economics and Business</strong>. My research focuses on <strong>health policy and systems research</strong>, with particular interest in <strong>health inequality</strong>, healthcare access, and the evaluation of public health interventions using quasi-experimental methods.
                     </p>
-                    <div class="contact-links">
-                        <a href="mailto:yangruirui@stu.pku.edu.cn" class="contact-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <span>北大邮箱</span>
-                        </a>
-                        <a href="mailto:yangrachel001@gmail.com" class="contact-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <span>Gmail</span>
-                        </a>
-                        <a href="https://github.com/Rachel-00" target="_blank" rel="noopener" class="contact-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
+                    <p class="text-justify mt-3 mb-0">
+                        I have collaborated with researchers at MIT Sloan, the Chinese Academy of Social Sciences (CASS), the University of Amsterdam, and the Chinese University of Hong Kong. My work has been published in <em>The Lancet</em> (Q1, IF = 8.1) and presented at international conferences including the International Health Economics Association (iHEA) and the European Health Economics Association (EuHEA).
+                    </p>
                 </div>
-                <div class="contact-card">
-                    <div class="card-glow"></div>
-                    <div class="contact-card-content">
-                        <p class="contact-card-label">当前状态</p>
-                        <p class="contact-card-status">
-                            <span class="status-dot"></span>
-                            开放科研合作机会
-                        </p>
-                        <p class="contact-card-text">
-                            正在寻找博士项目或研究助理岗位。对健康政策、数字医疗、
-                            卫生经济学等方向的研究机会持开放态度。
-                        </p>
+            </div>
+
+            <div class="card border-0 shadow-sm bg-white mt-3" id="education">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-3"><i class="fas fa-graduation-cap mr-2 text-muted"></i>Education</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="edu-item mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-university text-muted mr-2 mt-1"></i>
+                                    <div class="flex-grow-1">
+                                        <div class="font-weight-bold">Peking University</div>
+                                        <div class="small text-muted">School of Public Health</div>
+                                        <div class="small d-flex">
+                                            <span>Master of Public Health (MPH)</span>
+                                            <span class="ml-auto font-italic text-muted">2022 - 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="edu-item mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-university text-muted mr-2 mt-1"></i>
+                                    <div class="flex-grow-1">
+                                        <div class="font-weight-bold">Capital University of Economics and Business</div>
+                                        <div class="small text-muted">School of Labor Economics</div>
+                                        <div class="small d-flex">
+                                            <span>Bachelor's Degree (Double Major)</span>
+                                            <span class="ml-auto font-italic text-muted">2018 - 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text">
-                    &copy; <span id="year">2025</span> Ruirui Yang. Built with ❤️ and data.
-                </p>
-                <a href="#hero" class="footer-top">
-                    回到顶部
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="12" y1="19" x2="12" y2="5"/>
-                        <polyline points="5 12 12 5 19 12"/>
-                    </svg>
-                </a>
+            <div class="card border-0 shadow-sm bg-white mt-3" id="research">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-4"><i class="fas fa-microscope mr-2 text-muted"></i>Research Experience</h5>
+
+                    <div class="research-item mb-4">
+                        <div class="d-flex">
+                            <div class="research-dot"></div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex flex-wrap">
+                                    <span class="font-weight-bold">Research Assistant</span>
+                                    <span class="ml-auto font-italic text-muted small">MIT Sloan School of Management</span>
+                                </div>
+                                <div class="small text-muted mb-2">Collaborative project on health economics</div>
+                                <p class="small mb-1 text-justify">Contributed to health economics research under the supervision of faculty at MIT Sloan, focusing on healthcare delivery evaluation and policy impact assessment using quasi-experimental designs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item mb-4">
+                        <div class="d-flex">
+                            <div class="research-dot"></div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex flex-wrap">
+                                    <span class="font-weight-bold">Research Assistant</span>
+                                    <span class="ml-auto font-italic text-muted small">Chinese Academy of Social Sciences (CASS)</span>
+                                </div>
+                                <div class="small text-muted mb-2">Institute of Population and Labor Economics</div>
+                                <p class="small mb-1 text-justify">Conducted research on population health, labor economics, and social policy evaluation. Assisted in survey design, data collection, and statistical analysis of large-scale national datasets.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item mb-4">
+                        <div class="d-flex">
+                            <div class="research-dot"></div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex flex-wrap">
+                                    <span class="font-weight-bold">Visiting Researcher</span>
+                                    <span class="ml-auto font-italic text-muted small">University of Amsterdam (UvA)</span>
+                                </div>
+                                <div class="small text-muted mb-2">Department of Economics</div>
+                                <p class="small mb-1 text-justify">Collaborated with UvA researchers on cross-country comparative health policy studies, applying econometric methods to analyze healthcare system performance and equity across European countries.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item mb-4">
+                        <div class="d-flex">
+                            <div class="research-dot"></div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex flex-wrap">
+                                    <span class="font-weight-bold">Research Collaborator</span>
+                                    <span class="ml-auto font-italic text-muted small">The Chinese University of Hong Kong (CUHK)</span>
+                                </div>
+                                <div class="small text-muted mb-2">Jockey Club School of Public Health</div>
+                                <p class="small mb-1 text-justify">Worked on public health research projects examining health disparities and healthcare access in the Greater Bay Area, contributing to study design and data analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-item mb-0">
+                        <div class="d-flex">
+                            <div class="research-dot"></div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex flex-wrap">
+                                    <span class="font-weight-bold">Research Assistant</span>
+                                    <span class="ml-auto font-italic text-muted small">Beijing Health Big Data Center (BHI)</span>
+                                </div>
+                                <div class="small text-muted mb-2">Health data analytics</div>
+                                <p class="small mb-1 text-justify">Engaged in health big data analytics projects, utilizing administrative health records and API-based data collection to study population health trends and healthcare utilization patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+            <div class="card border-0 shadow-sm bg-white mt-3" id="publications">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-4"><i class="fas fa-star mr-2 text-muted"></i>Publications & Conferences</h5>
+
+                    <div class="pub-item mb-4">
+                        <div class="d-flex">
+                            <div class="pub-badge"><span class="badge badge-primary">Q1</span></div>
+                            <div class="flex-grow-1">
+                                <div class="font-weight-bold">
+                                    <a href="#" class="text-dark">[Publication title in The Lancet]</a>
+                                </div>
+                                <div class="small text-muted mb-1">
+                                    <em>The Lancet</em> &middot; IF = 8.1 &middot; Q1
+                                </div>
+                                <p class="small text-muted mb-1">Ruirui Yang, et al.</p>
+                                <div class="small">
+                                    <a href="#" class="text-muted mr-2"><i class="fas fa-file-pdf mr-1"></i>PDF</a>
+                                    <a href="#" class="text-muted mr-2"><i class="fas fa-external-link-alt mr-1"></i>DOI</a>
+                                    <a href="#" class="text-muted"><i class="fas fa-quote-right mr-1"></i>Cite</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <h6 class="text-muted mb-3"><i class="fas fa-microphone mr-2"></i>Conference Presentations</h6>
+
+                    <div class="conf-item mb-3">
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt text-muted mr-2 mt-1 small"></i>
+                            <div class="flex-grow-1">
+                                <div class="small font-weight-bold">Oral Presentation</div>
+                                <div class="small">International Health Economics Association (iHEA) Congress</div>
+                                <div class="small text-muted">Presented research findings on health policy evaluation</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conf-item mb-0">
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt text-muted mr-2 mt-1 small"></i>
+                            <div class="flex-grow-1">
+                                <div class="small font-weight-bold">Oral Presentation</div>
+                                <div class="small">European Health Economics Association (EuHEA) Conference</div>
+                                <div class="small text-muted">Presented research on health inequality measurement</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm bg-white mt-3" id="skills">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-4"><i class="fas fa-chart-bar mr-2 text-muted"></i>Research Skills</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h6 class="small font-weight-bold text-muted text-uppercase mb-2">Statistical Software</h6>
+                            <div>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Stata</span>
+                                <span class="skill-tag">R</span>
+                                <span class="skill-tag">ArcGIS</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="small font-weight-bold text-muted text-uppercase mb-2">Econometric Methods</h6>
+                            <div>
+                                <span class="skill-tag">Staggered DiD</span>
+                                <span class="skill-tag">Random Forest</span>
+                                <span class="skill-tag">VIMP</span>
+                                <span class="skill-tag">IV Estimation</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="small font-weight-bold text-muted text-uppercase mb-2">Data Collection</h6>
+                            <div>
+                                <span class="skill-tag">API Data Scraping</span>
+                                <span class="skill-tag">Survey Design</span>
+                                <span class="skill-tag">Administrative Data</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-0">
+                            <h6 class="small font-weight-bold text-muted text-uppercase mb-2">Qualitative Methods</h6>
+                            <div>
+                                <span class="skill-tag">In-depth Interviews</span>
+                                <span class="skill-tag">Qualitative Coding</span>
+                                <span class="skill-tag">Focus Groups</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm bg-white mt-3" id="honors">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-3"><i class="fas fa-award mr-2 text-muted"></i>Honors & Awards</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex mb-2">
+                            <i class="fas fa-medal text-warning mr-2 mt-1"></i>
+                            <div class="flex-grow-1">
+                                <div class="d-flex">
+                                    <span>Peking University Outstanding Research Award</span>
+                                    <span class="ml-auto font-italic text-muted small">2024</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-2">
+                            <i class="fas fa-medal text-warning mr-2 mt-1"></i>
+                            <div class="flex-grow-1">
+                                <div class="d-flex">
+                                    <span>May Fourth Youth Science Award</span>
+                                    <span class="ml-auto font-italic text-muted small">2024</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-2">
+                            <i class="fas fa-medal text-warning mr-2 mt-1"></i>
+                            <div class="flex-grow-1">
+                                <div class="d-flex">
+                                    <span>Beijing Outstanding Graduate</span>
+                                    <span class="ml-auto font-italic text-muted small">2022</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-0">
+                            <i class="fas fa-medal text-warning mr-2 mt-1"></i>
+                            <div class="flex-grow-1">
+                                <div class="d-flex">
+                                    <span>National Scholarship</span>
+                                    <span class="ml-auto font-italic text-muted small">2021</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm bg-white mt-3 mb-4">
+                <div class="card-body p-4">
+                    <h5 class="card-title mb-3"><i class="fas fa-address-card mr-2 text-muted"></i>Contact</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-envelope text-muted mr-2"></i>
+                                <a href="mailto:ruirui.yang@pku.edu.cn" class="text-dark">ruirui.yang@pku.edu.cn</a>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-envelope-open-text text-muted mr-2"></i>
+                                <a href="mailto:ruiruiyang.pku@gmail.com" class="text-dark">ruiruiyang.pku@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fab fa-github text-muted mr-2"></i>
+                                <a href="https://github.com/Rachel-00" target="_blank" class="text-dark">github.com/Rachel-00</a>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-map-marker-alt text-muted mr-2"></i>
+                                <span class="text-dark">School of Public Health, Peking University, Beijing, China</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-4 text-muted small">
+    &copy; 2025 Ruirui Yang &middot; Built with <a href="https://github.com/luost26/academic-homepage" class="text-muted" target="_blank">academic-homepage</a> style
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
