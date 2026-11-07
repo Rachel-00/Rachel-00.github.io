@@ -25,4 +25,4 @@ The homepage deliberately keeps temporary RA roles in a compact experience list.
 
 After changing CSS, update the version query on the stylesheet link in `index.html` so browsers fetch the new styles.
 
-Undergraduate education comprises two bachelor’s degrees, in Accounting and Statistics. Unpublished projects are not displayed in a separate homepage section.
+Undergraduate education is listed as B.A. in Accounting and B.S. in Statistics. Unpublished projects are not displayed in a separate homepage section.
