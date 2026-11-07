@@ -6,7 +6,7 @@ A responsive, dependency-free static site hosted on GitHub Pages from the `main`
 
 ## Edit the site
 
-- `index.html`: biography, research, experience, publications, education, awards, and contact information.
+- `index.html`: biography, research experience, publications, education, awards, and contact information.
 - `style.css`: responsive layouts, colors, typography, and print styles.
 - `script.js`: accessible mobile navigation and active section indicators.
 - `assets/portrait.jpg`: portrait supplied by the site owner.
@@ -18,3 +18,5 @@ No build or package installation is required. Preview locally with `python3 -m h
 When updating the content, also update the footer date and `sitemap.xml`. Use relative asset paths. Keep publication authorship and research roles faithful to the CV; acknowledged contributions are not listed as authored publications.
 
 The design uses local system fonts and does not load analytics, cookies, third-party scripts, or remote font services. The portrait and CV remain the property of Ruirui Rachel Yang.
+
+Content is limited to facts in the supplied CV. There is no inferred research-interest statement. The palette uses red, navy, black, and white.
