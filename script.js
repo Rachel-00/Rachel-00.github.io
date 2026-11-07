@@ -22,7 +22,7 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.site-header')) closeMenu();
 });
-const desktop = window.matchMedia('(min-width: 621px)');
+const desktop = window.matchMedia('(min-width: 801px)');
 desktop.addEventListener('change', closeMenu);
 const sectionLinks = [...navigation.querySelectorAll('a[href^="#"]')];
 const sections = sectionLinks.map(link => document.querySelector(link.getAttribute('href')));
