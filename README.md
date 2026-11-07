@@ -6,7 +6,7 @@ A responsive, dependency-free static site hosted on GitHub Pages from the `main`
 
 ## Edit the site
 
-- `index.html`: profile, education, three selected projects, publication, concise research assistant appointments, linked supervisors, and contact information.
+- `index.html`: profile, education, publication, concise research assistant appointments, linked supervisors, and contact information.
 - `style.css`: responsive layouts, colors, typography, and print styles.
 - `script.js`: accessible mobile navigation and active section indicators.
 - `assets/portrait.jpg`: portrait supplied by the site owner.
@@ -21,6 +21,8 @@ The design uses local system fonts and does not load analytics, cookies, third-p
 
 Content is limited to facts in the supplied CV. There is no inferred research-interest statement. The palette uses red, navy, black, and white.
 
-The homepage deliberately keeps temporary RA roles in a compact experience list. Selected projects give brief examples of completed work. Full descriptions, conference presentations, honors, teaching, and service are in the downloadable CV.
+The homepage deliberately keeps temporary RA roles in a compact experience list. Full descriptions, conference presentations, honors, teaching, and service are in the downloadable CV.
 
 After changing CSS, update the version query on the stylesheet link in `index.html` so browsers fetch the new styles.
+
+Undergraduate education comprises two bachelor’s degrees, in Accounting and Statistics. Unpublished projects are not displayed in a separate homepage section.
