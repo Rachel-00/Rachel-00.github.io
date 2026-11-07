@@ -22,3 +22,5 @@ The design uses local system fonts and does not load analytics, cookies, third-p
 Content is limited to facts in the supplied CV. There is no inferred research-interest statement. The palette uses red, navy, black, and white.
 
 The homepage deliberately keeps temporary RA roles in a compact experience list. Full project descriptions, conference presentations, honors, teaching, and service are in the downloadable CV.
+
+After changing CSS, update the version query on the stylesheet link in `index.html` so browsers fetch the new styles.
