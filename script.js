@@ -1,27 +1,43 @@
-$(document).ready(function() {
-    $('a[href^="#"]').on('click', function(e) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            e.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top - 70
-            }, 400);
-        }
-    });
-
-    var sections = $('div[id]');
-    var navLinks = $('.navbar .nav-link');
-
-    $(window).on('scroll', function() {
-        var current = $(this).scrollTop() + 100;
-        sections.each(function() {
-            var top = $(this).offset().top;
-            var bottom = top + $(this).outerHeight();
-            var id = $(this).attr('id');
-            if (current >= top && current <= bottom) {
-                navLinks.removeClass('active');
-                navLinks.filter('[href="#' + id + '"]').addClass('active');
-            }
-        });
-    });
+'use strict';
+const menuButton = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('#navigation');
+function closeMenu() {
+  menuButton.setAttribute('aria-expanded', 'false');
+  navigation.classList.remove('is-open');
+}
+menuButton.addEventListener('click', () => {
+  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-expanded', String(!isOpen));
+  navigation.classList.toggle('is-open', !isOpen);
 });
+navigation.addEventListener('click', event => {
+  if (event.target.closest('a')) closeMenu();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+    menuButton.focus();
+  }
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('.site-header')) closeMenu();
+});
+const desktop = window.matchMedia('(min-width: 621px)');
+desktop.addEventListener('change', closeMenu);
+const sectionLinks = [...navigation.querySelectorAll('a[href^="#"]')];
+const sections = sectionLinks.map(link => document.querySelector(link.getAttribute('href')));
+let pending = false;
+function updateActiveSection() {
+  let current = null;
+  sections.forEach(section => { if (section.getBoundingClientRect().top <= 160) current = section.id; });
+  sectionLinks.forEach(link => {
+    if (link.hash === '#' + current) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+  pending = false;
+}
+window.addEventListener('scroll', () => {
+  if (!pending) { pending = true; requestAnimationFrame(updateActiveSection); }
+}, { passive: true });
+updateActiveSection();
+document.querySelector('#year').textContent = new Date().getFullYear();

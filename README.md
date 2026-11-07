@@ -1,37 +1,20 @@
-# Ruirui Yang - Academic Homepage
+# Ruirui Rachel Yang
 
-Personal academic website for Ruirui Yang, Master of Public Health candidate at Peking University.
+Personal academic website: https://rachel-00.github.io/
 
-## Design
+A responsive, dependency-free static site hosted on GitHub Pages from the `main` branch. Content updated from the supplied academic CV in November 2026.
 
-Based on the [luost26/academic-homepage](https://github.com/luost26/academic-homepage) design aesthetic, with sections customized for academic research:
+## Edit the site
 
-- **About** - Research focus and background
-- **Education** - Peking University (MPH) + Capital University of Economics and Business
-- **Research Experience** - MIT Sloan, CASS, UvA, CUHK, BHI
-- **Publications & Conferences** - Lancet (Q1, IF=8.1) + iHEA/EuHEA presentations
-- **Research Skills** - Python/Stata/ArcGIS, staggered DiD, random forest, VIMP
-- **Honors & Awards** - PKU Outstanding Research, May Fourth Youth Science Award
-- **Contact** - Email, GitHub
+- `index.html`: biography, research, experience, publications, education, awards, and contact information.
+- `style.css`: responsive layouts, colors, typography, and print styles.
+- `script.js`: accessible mobile navigation and active section indicators.
+- `assets/portrait.jpg`: portrait supplied by the site owner.
+- `assets/Ruirui_Yang_CV.pdf`: public CV, with the phone number omitted.
+- `assets/yang-2025-kidney-care.bib`: publication citation.
 
-## Tech Stack
+No build or package installation is required. Preview locally with `python3 -m http.server 8765`, then visit http://localhost:8765. Push changes to `main` to trigger the existing GitHub Pages deployment. `.nojekyll` ensures that files are served as static assets.
 
-- HTML / CSS / JavaScript (no build step)
-- Bootstrap 4.6 (grid + components)
-- Font Awesome 6 + Academicons
-- Lato / Fira Sans fonts
-- Deployed via GitHub Pages
+When updating the content, also update the footer date and `sitemap.xml`. Use relative asset paths. Keep publication authorship and research roles faithful to the CV; acknowledged contributions are not listed as authored publications.
 
-## Structure
-
-```
-.
-├── index.html      # Main page
-├── style.css       # Styles
-├── script.js       # Smooth scroll + navbar
-└── README.md       # This file
-```
-
-## Live Site
-
-https://rachel-00.github.io/
+The design uses local system fonts and does not load analytics, cookies, third-party scripts, or remote font services. The portrait and CV remain the property of Ruirui Rachel Yang.
