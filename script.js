@@ -25,11 +25,15 @@ document.addEventListener('click', event => {
 const desktop = window.matchMedia('(min-width: 801px)');
 desktop.addEventListener('change', closeMenu);
 const sectionLinks = [...navigation.querySelectorAll('a[href^="#"]')];
-const sections = sectionLinks.map(link => document.querySelector(link.getAttribute('href')));
+const sections = [...document.querySelectorAll('main > section')];
 let pending = false;
 function updateActiveSection() {
   let current = null;
-  sections.forEach(section => { if (section.getBoundingClientRect().top <= 160) current = section.id; });
+  for (const section of sections) {
+    if (section.getBoundingClientRect().top > 160) break;
+    current = section.id;
+  }
+  if (current === 'experience') current = 'research';
   sectionLinks.forEach(link => {
     if (link.hash === '#' + current) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
