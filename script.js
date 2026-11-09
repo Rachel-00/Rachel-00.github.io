@@ -33,6 +33,9 @@ function updateActiveSection() {
     if (section.getBoundingClientRect().top > 160) break;
     current = section.id;
   }
+  // The last section can be shorter than the space below the sticky header.
+  const atBottom = Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight;
+  if (window.scrollY > 0 && atBottom) current = sections[sections.length - 1].id;
   sectionLinks.forEach(link => {
     if (link.hash === '#' + current) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
