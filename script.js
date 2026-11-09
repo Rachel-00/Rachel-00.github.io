@@ -33,7 +33,6 @@ function updateActiveSection() {
     if (section.getBoundingClientRect().top > 160) break;
     current = section.id;
   }
-  if (current === 'experience') current = 'research';
   sectionLinks.forEach(link => {
     if (link.hash === '#' + current) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
