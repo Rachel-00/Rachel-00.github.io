@@ -63,3 +63,16 @@
 .appointment li a, #book-chapters .paper-abstract a, .authors a { color: var(--navy); text-decoration: underline; text-decoration-color: #b9bfc7; text-underline-offset: 3px; }
 .appointment li a:hover, #book-chapters .paper-abstract a:hover, .authors a:hover { color: var(--red); text-decoration-color: var(--red); }
 #book-chapters h3 { font-size: 25px; }
+
+/* Compact honors with consistent title, detail, and year alignment. */
+.honors-list { list-style: none; padding: 0; margin: 0; }
+.award-entry { display: grid; grid-template-columns: minmax(0, 1fr) 48px; gap: 20px; align-items: baseline; padding: 19px 0; border-bottom: 1px solid #eceef0; }
+.award-entry:first-child { padding-top: 0; }
+.award-entry:last-child { padding-bottom: 0; border-bottom: 0; }
+.award-entry h3 { font-size: 17px; font-weight: 500; line-height: 1.5; color: var(--navy); }
+.award-entry p { margin-top: 4px; font-size: 15px; line-height: 1.5; color: var(--muted); }
+.award-entry time { font-size: 14px; line-height: 1.5; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+#field-research .appointment { border: 0; padding-bottom: 0; }
+@media (max-width: 600px) {
+  .award-entry { column-gap: 16px; grid-template-columns: minmax(0, 1fr) 40px; }
+}
