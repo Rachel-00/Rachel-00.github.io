@@ -15,27 +15,26 @@
   margin: 12px 0 0;
   padding-inline-start: 1.2em;
   color: #50555e;
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.7;
 }
-.appointment li + li { margin-top: 5px; }
+.appointment li + li { margin-top: 10px; }
 .appointment li::marker { color: var(--muted); font-size: .8em; }
 
 .research-intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 142px;
-  grid-template-areas: "identity photo" "interests photo";
+  grid-template-areas: "identity photo";
   gap: 15px 56px;
   align-content: center;
   padding: 38px 0 32px;
 }
-.identity { grid-area: identity; align-self: end; }
-.research-intro h1 { font-size: clamp(50px, 5vw, 72px); }
+.identity { grid-area: identity; align-self: center; }
+.research-intro h1 { font-size: clamp(50px, 5vw, 72px); font-weight: 600; }
 .affiliation { margin-top: 9px; font-size: 19px; color: var(--navy); line-height: 1.45; }
 .identity .mentor { margin-top: 4px; }
 .profile-photo { grid-area: photo; align-self: center; }
 .profile-photo img { display: block; width: 100%; height: auto; }
-.research-interests { grid-area: interests; max-width: 76ch; font-size: 17px; line-height: 1.6; }
 .working-paper h3 { text-wrap: pretty; }
 .working-paper .authors { margin-top: 10px; }
 .working-paper .authors a {
@@ -50,10 +49,9 @@
   .affiliation { font-size: 17px; }
 }
 @media (max-width: 600px) {
-  .research-intro { grid-template-columns: minmax(0, 1fr) 72px; grid-template-areas: "identity photo" "interests interests"; gap: 16px 14px; padding: 26px 0 24px; }
+  .research-intro { grid-template-columns: minmax(0, 1fr) 72px; grid-template-areas: "identity photo"; gap: 16px 14px; padding: 26px 0 24px; }
   .research-intro h1 { font-size: clamp(35px, 8.5vw, 50px); }
   .affiliation { font-size: 16px; }
-  .research-interests { font-size: 16px; }
   .identity .mentor { font-size: 14px; }
   .paper-abstract { font-size: 16px; }
 }
@@ -61,3 +59,7 @@
   .research-intro { padding: 0 0 20px; }
 
 }
+
+.appointment li a, #book-chapters .paper-abstract a, .authors a { color: var(--navy); text-decoration: underline; text-decoration-color: #b9bfc7; text-underline-offset: 3px; }
+.appointment li a:hover, #book-chapters .paper-abstract a:hover, .authors a:hover { color: var(--red); text-decoration-color: var(--red); }
+#book-chapters h3 { font-size: 25px; }
